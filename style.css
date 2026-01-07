@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Orbitron", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(./photo.png) no-repeat center/cover;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.todo-app {
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    background: rgba(255,255,255,0.1);
+    border: 3px solid rgba(255,255,255,0.18);
+    box-shadow: 0 0 100px rgba(0,0,0,0.5);
+    color: white;
+    text-align: center;
+}
+
+.todo-app h1 {
+    margin-bottom: 20px;
+}
+
+.input-area {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.input-area input {
+    flex: 1;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background: rgba(255,194,209,0.3);
+}
+
+.input-area button {
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(255,194,209,0.3);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.input-area button:hover {
+    transform: scale(1.1);
+    background: #ff6f91;
+}
+
+#task-list {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255,255,255,0.15);
+    padding: 10px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    animation: fadeIn 0.3s ease;
+}
+
+.task-text.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.task-date {
+    font-size: 0.7rem;
+    opacity: 0.7;
+}
+
+.delete-btn {
+    background: none;
+    border: none;
+    color: #ff6f91;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#clear-all {
+    margin-top: 15px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: none;
+    background: #ff6f91;
+    color: white;
+    cursor: pointer;
+}
+
+.empty-image {
+    width: 150px;
+    margin: 20px auto;
+    display: block;
+    mix-blend-mode: multiply;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+

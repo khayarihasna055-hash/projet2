@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List App</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="todo-app">
+
+            <h1>TO-DO APP</h1>
+
+            <form class="input-area">
+                <input type="text" id="task-input" placeholder="Add a new task...">
+                <button type="submit" id="add-task-btn">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </form>
+
+            <ul id="task-list"></ul>
+
+            <img class="empty-image" src="./image.png" alt="No tasks">
+
+            <button id="clear-all">Clear All</button>
+
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+</html>
+
+
